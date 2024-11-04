@@ -5,7 +5,7 @@ const InputChat = (props) => {
 
    return (
       <div className={`container-fluid fixed-bottom p-xl-4 shadow-sm ${isDarkMode ? "bg-dark" : "bg-body-tertiary"}`}>
-         <div className="container d-flex align-items-center justify-content-center gap-2 py-3">
+         <form className="container d-flex align-items-center justify-content-center gap-2 py-3">
             <input 
                onChange={onChange} 
                type="text" 
@@ -21,7 +21,7 @@ const InputChat = (props) => {
                <i className="bi bi-send me-2"></i>
                Kirim
             </button>
-         </div>
+         </form>
       </div>
    );
 }

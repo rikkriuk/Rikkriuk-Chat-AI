@@ -11,15 +11,15 @@ const Navbar = (props) => {
          <div className="container">
             <div className={`d-flex align-items-center justify-content-center gap-2 ${textClass}`}>
                <i className="bi bi-robot fs-4"></i>
-               <h1 className="fs-4 m-0">Rikkriuk AI</h1>
+               <h1 className="fs-5 m-0">Rikkriuk AI</h1>
             </div>
-            <div className={`d-flex align-items-center justify-content-center gap-2 ${textClass}`}>
-               <button className="btn btn-success" onClick={onClick}>
-                  {isDarkMode ? "Light" : "Dark"}
+            <div className={`d-flex align-items-center justify-content-center gap-3 ${textClass}`}>
+               <button className="btn btn-outline-success" onClick={onClick}>
+                  {isDarkMode ? <i class="bi bi-brightness-high-fill text-light"></i> : <i class="bi bi-moon-stars-fill text-dark"></i>}
                </button>
                <div className={`d-flex align-items-center justify-content-center gap-2 ${textClass}`}>
                   <i className="bi bi-person-circle fs-5"></i>
-                  <h1 className="fs-5 m-0">{username}</h1>
+                  <p className="fs-5 m-0">{username}</p>
                </div>
             </div>
          </div>
